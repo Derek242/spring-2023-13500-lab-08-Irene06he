@@ -1,0 +1,55 @@
+* Spring 2023 - Lab 08
+
+* Last name:
+
+* First name:
+
+* GitHub username:
+
+* Notes:
+
+
+  
+* General instructions:
+- Fill in your name and GitHub username on top.
+- Use the Notes section to add any notes to the instructor.
+- The main lab description can be found here:
+  https://maryash.github.io/135/labs/lab_08.html 
+
+
+* Specific instructions for lab 08
+
+The main lab references in image named *inImage.pgm*. You can download
+that or use your own but this repo includes two sample *pgm* (and
+*jpg*) files that you can use to test your solution.
+
+The main lab also talks about a file ~lab-images.cpp~. Instead, you
+should use the files ~imageio.cpp~ and ~imageio.h~ that are in this
+repo. They include  modified versions of readImage and
+writeImage. They have been modified to accept a std::string as the
+first parameter representing the name of the file to read or write.
+
+There is also an example file: ~sample.cpp~ and a ~Makefile~ that
+builds it to shhow hwo to use ~imageio.cpp~.
+
+For this lab, instead of writing separate programs, write one program
+that you should compile using *make*. You should modify the provided
+~Makefile~. For each task, save the resultant (output) image using the
+name *taskN.pgm* where N is the task letter (taskA.pgm, taskB.pgm,
+etc.).
+
+
+Important specifics:
+
+1. Your program must use *make* to build it and must include targets
+   for *main* which builds the program and *clean* which removes ~.o~
+   files.
+2. Your program must consist of *at least* two ~.cpp~ files if not
+   more, not counting ~imageio.cpp~. 
+3. You *should not* change anything in ~iamgeio.cpp~.
+4. This lab should *not* use ~doctest.h~, it should just run with no
+   user input and generate the output images.
+
+5. *DO NOT* add the output images to the repo.
+6. If you use another source image for your program. make sure to
+   include that in the repo.
