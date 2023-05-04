@@ -37,7 +37,8 @@ void invert_half(std::string input)
 	}
       else {
 	  out[row][col] = img[row][col];
-	}}
+	}
+    }
   }
   writeImage("taskB.pgm", out, h, w);
 }
@@ -79,12 +80,9 @@ void frame(std:: string input){
     {
       for (int col = first_width; col <= third_width; col++)
 	{
-		if (row == first_height || row == third_height ){
+		if ((row == first_height || row == third_height) || (col == first_width || col == third_width){
 	  		img[row][col] = 255;
 	}
-		else if (col == first_width || col == third_width){
-			img[row][col] = 255;
-		}
     }
 }
   writeImage("taskD.pgm", img, h, w);
